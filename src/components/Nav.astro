@@ -1,0 +1,20 @@
+---
+const links = [
+	{ href: '/', label: 'Accueil' },
+	{ href: '/blog', label: 'Blog' },
+	{ href: '/qui-suis-je', label: 'Qui suis-je' },
+	{ href: '/travailler-avec-moi', label: 'Travailler avec moi' },
+];
+---
+
+<nav>
+	<ul>
+		{links.map((link) => (
+			<li>
+				<a href={link.href} aria-current={Astro.url.pathname === link.href ? 'page' : undefined}>
+					{link.label}
+				</a>
+			</li>
+		))}
+	</ul>
+</nav>

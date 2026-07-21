@@ -1,0 +1,41 @@
+:root {
+	color-scheme: light dark;
+	--max-width: 42rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	line-height: 1.6;
+}
+
+header,
+main,
+footer {
+	max-width: var(--max-width);
+	margin-inline: auto;
+	padding-inline: 1rem;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+}
+
+nav a[aria-current='page'] {
+	font-weight: bold;
+}
+
+footer {
+	margin-top: 3rem;
+	padding-block: 1.5rem;
+	font-size: 0.875rem;
+	opacity: 0.75;
+}

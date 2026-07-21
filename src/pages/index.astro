@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const latestPosts = allPosts
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 5);
+---
+
+<BaseLayout>
+	<h1>Derniers articles</h1>
+
+	{latestPosts.map((post) => <ArticleCard post={post} />)}
+
+	<p><a href="/blog">Voir tous les articles →</a></p>
+</BaseLayout>
