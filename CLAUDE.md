@@ -1,3 +1,7 @@
+## Style
+
+Pas de tirets longs (—) dans les textes affichés sur le site : c'est perçu comme un marqueur d'IA en français. Utiliser un point, une virgule, ou un « | » entouré d'espaces selon le contexte.
+
 ## Development
 
 When starting the dev server, use background mode:
