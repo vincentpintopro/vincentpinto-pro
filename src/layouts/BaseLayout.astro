@@ -6,11 +6,13 @@ import '../styles/global.css';
 interface Props {
 	title?: string;
 	description?: string;
+	/** Utilise `title` tel quel dans <title>, sans ajouter "· SITE_TITLE" (utile quand title contient déjà le nom du site, ex: l'accueil). */
+	rawTitle?: boolean;
 }
 
-const { title, description = SITE_DESCRIPTION } = Astro.props;
+const { title, description = SITE_DESCRIPTION, rawTitle = false } = Astro.props;
 
-const pageTitle = title ? `${title} · ${SITE_TITLE}` : SITE_TITLE;
+const pageTitle = !title ? SITE_TITLE : rawTitle ? title : `${title} · ${SITE_TITLE}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Astro déduit la langue courante ("fr" ou "en") depuis la config i18n

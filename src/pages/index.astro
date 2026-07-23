@@ -9,8 +9,31 @@ const latestPosts = allPosts
 	.slice(0, 5);
 ---
 
-<BaseLayout>
-	<h1>Derniers articles</h1>
+<BaseLayout
+	title="Vincent Pinto | Conseils pour les pros de l’outdoor"
+	description="Conseils concrets pour les structures d’activités outdoor : vendre mieux, être visible sur Google, choisir ses outils, élargir sa saison. Par Vincent Pinto, 10 ans de terrain."
+	rawTitle
+>
+	<h1>Vincent Pinto</h1>
+
+	<p>
+		Passionné d’outdoor et d’aventure, mon objectif est de permettre à tout le monde d’aller
+		découvrir ces sports.
+	</p>
+	<p>
+		Pour ça, j’aide les structures qui les rendent accessibles sur le terrain : écoles de
+		plongée, guides, bureaux de moniteurs, clubs, ou encore les territoires qui veulent
+		développer leur attractivité. Ici, je partage des conseils pour les pros de l’outdoor :
+		comprendre les enjeux du secteur, vendre mieux, être visible sur Google, choisir les bons
+		outils, construire des produits qui donnent envie, toucher de nouveaux clients, élargir
+		les saisons.
+	</p>
+	<p>
+		Des conseils concrets, tirés de plus de dix ans de terrain avec des pros de l’outdoor
+		partout dans le monde.
+	</p>
+
+	<h2>Derniers articles</h2>
 
 	{latestPosts.map((post) => <ArticleCard post={post} />)}
 
