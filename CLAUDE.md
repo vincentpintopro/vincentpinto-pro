@@ -2,6 +2,8 @@
 
 Pas de tirets longs (—) dans les textes affichés sur le site : c'est perçu comme un marqueur d'IA en français. Utiliser un point, une virgule, ou un « | » entouré d'espaces selon le contexte.
 
+Quand un lien `<a>` est précédé d'une espace dans une phrase, ne jamais laisser cette espace dépendre d'un retour à la ligne dans le code (Astro la rogne à la compilation). Utiliser `{' '}` explicite avant le `<a>`, ou garder le lien sur la même ligne que le mot qui précède.
+
 ## Development
 
 When starting the dev server, use background mode:
