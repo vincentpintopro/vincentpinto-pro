@@ -1,6 +1,6 @@
 ---
 title: "Le vrai goulot d’étranglement des professionnels de l’outdoor, ce n’est pas la demande. C’est la disponibilité."
-description: "Vous avez sans doute plus de demande que vous ne le pensez. Ce qui vous coûte des réservations, c’est l’écart entre ce qui s’affiche en ligne et ce qui est réellement disponible chez vous."
+description: "L’écart entre ce qui s’affiche en ligne et ce qui est réellement disponible chez vous, c’est ce qui vous fait perdre des réservations."
 pubDate: 2026-07-24
 draft: false
 ---

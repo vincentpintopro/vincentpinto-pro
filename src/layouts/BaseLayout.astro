@@ -38,6 +38,7 @@ const lang = Astro.currentLocale ?? 'fr';
 		<!-- Open Graph : contrôle l'aperçu quand le lien est partagé (réseaux sociaux, Slack...) -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:site_name" content={SITE_TITLE} />
 		<meta property="og:title" content={pageTitle} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={ogImageURL} />

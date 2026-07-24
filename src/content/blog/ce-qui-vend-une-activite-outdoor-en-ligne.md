@@ -1,6 +1,6 @@
 ---
 title: "Ce qui vend une activité outdoor en ligne (et ce n’est pas que le prix)"
-description: "Sur le même spot, avec la même prestation, une fiche peut battre une autre moins chère et mieux notée. La différence tient à deux choses : donner envie, et rassurer."
+description: "Sur le même spot, une fiche peut battre une autre moins chère et mieux notée. Tout tient à deux choses : donner envie, et rassurer."
 pubDate: 2026-07-23
 draft: false
 ---
