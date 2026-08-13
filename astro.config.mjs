@@ -8,6 +8,12 @@ export default defineConfig({
 	// Astro s'en sert pour générer les URLs absolues (sitemap, canonical, OG tags).
 	site: 'https://vincentpinto.pro',
 
+	// Convention canonique du site : toujours un slash final (ex: /blog/).
+	// Cloudflare Pages sert les pages en dossier + index.html (page/index.html),
+	// et redirige nativement en 308 de /page vers /page/ pour ce format : cette
+	// convention s'aligne dessus au lieu de la combattre, sans code additionnel.
+	trailingSlash: 'always',
+
 	i18n: {
 		defaultLocale: 'fr',
 		locales: ['fr', 'en'],
