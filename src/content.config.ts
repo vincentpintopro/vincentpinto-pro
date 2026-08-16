@@ -1,19 +1,26 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
 import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
-	// "glob" scanne un dossier et charge chaque fichier .md comme une entrée.
-	loader: glob({ base: './src/content/blog', pattern: '**/*.md' }),
-	schema: z.object({
-		title: z.string(),
-		description: z.string(),
-		pubDate: z.coerce.date(),
-		updatedDate: z.coerce.date().optional(),
-		draft: z.boolean().default(false),
-		// Pas encore utilisé : servira plus tard à mettre certains articles
-		// en avant sur l'accueil une fois qu'il y aura assez de volume.
-		featured: z.boolean().default(false),
-	}),
+  // Fichiers plats (pas de dossier par article), pour garder les slugs
+  // et donc les URL /blog/slug/ strictement identiques.
+  loader: glob({ pattern: '**/*.md', base: "./src/content/blog" }),
+  schema: z.object({
+    // Champs tels qu'ils existent déjà dans mes fichiers .md, inchangés.
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.coerce.date(),
+    draft: z.boolean().default(false),
+    featured: z.boolean().default(false),
+  }).transform((data) => ({
+    ...data,
+    // Le thème lit partout `post.data.date` (tri, affichage, RSS...).
+    // On dérive `date` de `pubDate` ici, une seule fois, plutôt que de
+    // renommer `pubDate` dans mes fichiers ou de modifier tous les
+    // composants du thème un par un.
+    date: data.pubDate,
+  })),
 });
 
 export const collections = { blog };

@@ -1,41 +1,65 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import ArticleCard from '../components/ArticleCard.astro';
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import Link from "@components/Link.astro";
+import { SITE, HOME } from "@consts";
+import ArrowCard from "@components/ArrowCard.astro";
+import { getCollection } from "astro:content";
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
-const latestPosts = allPosts
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-	.slice(0, 5);
+const blog = (await getCollection("blog"))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, SITE.NUM_POSTS_ON_HOMEPAGE);
 ---
 
-<BaseLayout
-	title="Vincent Pinto | Conseils pour les pros de l’outdoor"
-	description="Conseils concrets pour les structures d’activités outdoor : vendre mieux, être visible sur Google, choisir ses outils, élargir sa saison. Par Vincent Pinto, 10 ans de terrain."
-	rawTitle
->
-	<h1>Vincent Pinto</h1>
+<Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
+  <Container>
+    <aside data-pagefind-ignore>
+      <h1 class="animate font-semibold text-black dark:text-white">
+        Vincent Pinto
+      </h1>
+      <div class="space-y-16">
+        <section>
+          <article class="animate space-y-4">
+            <p>
+              Passionné d’outdoor et d’aventure, mon objectif est de
+              permettre à tout le monde d’aller découvrir ces sports.
+            </p>
+            <p>
+              Pour ça, j’aide les structures qui les rendent accessibles sur
+              le terrain : écoles de plongée, guides, bureaux de moniteurs,
+              clubs, ou encore les territoires qui veulent développer leur
+              attractivité. Ici, je partage des conseils pour les pros de
+              l’outdoor : comprendre les enjeux du secteur, vendre mieux,
+              être visible sur Google, choisir les bons outils, construire
+              des produits qui donnent envie, toucher de nouveaux clients,
+              élargir les saisons.
+            </p>
+            <p>
+              Des conseils concrets, tirés de plus de dix ans de terrain
+              avec des pros de l’outdoor partout dans le monde.
+            </p>
+          </article>
+        </section>
 
-	<p>
-		Passionné d’outdoor et d’aventure, mon objectif est de permettre à tout le monde d’aller
-		découvrir ces sports.
-	</p>
-	<p>
-		Pour ça, j’aide les structures qui les rendent accessibles sur le terrain : écoles de
-		plongée, guides, bureaux de moniteurs, clubs, ou encore les territoires qui veulent
-		développer leur attractivité. Ici, je partage des conseils pour les pros de l’outdoor :
-		comprendre les enjeux du secteur, vendre mieux, être visible sur Google, choisir les bons
-		outils, construire des produits qui donnent envie, toucher de nouveaux clients, élargir
-		les saisons.
-	</p>
-	<p>
-		Des conseils concrets, tirés de plus de dix ans de terrain avec des pros de l’outdoor
-		partout dans le monde.
-	</p>
-
-	<h2>Derniers articles</h2>
-
-	{latestPosts.map((post) => <ArticleCard post={post} />)}
-
-	<p><a href="/blog/">Voir tous les articles →</a></p>
-</BaseLayout>
+        <section class="animate space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-y-2">
+            <h2 class="font-semibold text-black dark:text-white">
+              Derniers articles
+            </h2>
+            <Link href="/blog/"> Voir tous les articles </Link>
+          </div>
+          <ul class="not-prose flex flex-col gap-4">
+            {
+              blog.map((post) => (
+                <li>
+                  <ArrowCard entry={post} />
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </div>
+    </aside>
+  </Container>
+</Layout>
