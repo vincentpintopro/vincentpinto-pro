@@ -12,7 +12,14 @@ import BackToTop from "@components/BackToTop.astro";
       </div>
     </div>
     <div class="flex items-center justify-between">
-      <div>&copy; {new Date().getFullYear()} • {SITE.TITLE} 🔬</div>
+      <div>
+        &copy; {new Date().getFullYear()} {SITE.TITLE} |{" "}
+        <a
+          href="/mentions-legales/"
+          class="underline underline-offset-[3px] decoration-black/30 hover:decoration-black/50 dark:decoration-white/30 dark:hover:decoration-white/50 transition-colors duration-300 ease-in-out"
+          >Mentions légales</a
+        >
+      </div>
     </div>
   </Container>
 </footer>

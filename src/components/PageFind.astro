@@ -19,12 +19,27 @@ import Search from "astro-pagefind/components/Search";
           showImages: false,
           excerptLength: 15,
           resetStyles: false,
+          translations: {
+            placeholder: "Rechercher",
+            clear_search: "Effacer",
+            load_more: "Charger plus de résultats",
+            search_label: "Recherche sur ce site",
+            filters_label: "Filtres",
+            zero_results: "Pas de résultat pour [SEARCH_TERM]",
+            many_results: "[COUNT] résultats pour [SEARCH_TERM]",
+            one_result: "[COUNT] résultat pour [SEARCH_TERM]",
+            alt_search:
+              "Pas de résultat pour [SEARCH_TERM]. Résultats affichés pour [DIFFERENT_TERM]",
+            search_suggestion:
+              "Pas de résultat pour [SEARCH_TERM]. Essayez plutôt l’une de ces recherches :",
+            searching: "Recherche de [SEARCH_TERM]…",
+          },
         }}
       />
       <div class="mr-2 pb-1 pt-4 text-right text-xs dark:prose-invert">
-        Press <span class="prose text-xs dark:prose-invert"
-          ><kbd class="">Esc</kbd></span
-        > or click anywhere to close
+        Appuyez sur <span class="prose text-xs dark:prose-invert"
+          ><kbd class="">Échap</kbd></span
+        > ou cliquez n’importe où pour fermer
       </div>
     </div>
   </div>
