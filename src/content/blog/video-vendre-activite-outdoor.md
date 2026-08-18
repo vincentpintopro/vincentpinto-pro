@@ -1,8 +1,8 @@
 ---
 title: "La vidéo n’est pas encore obligatoire pour vendre votre activité. Mais pour combien de temps ?"
 description: "Une vidéo n’est pas indispensable aujourd’hui. Mais TikTok et YouTube sont devenus des moteurs de recherche, et une vidéo courte filmée au téléphone peut déjà vous démarquer."
-pubDate: 2026-08-13
-draft: true
+pubDate: 2026-08-18
+draft: false
 ---
 
 Soyons honnêtes d’entrée : une vidéo n’est pas indispensable aujourd’hui pour vendre une activité outdoor. Contrairement aux photos, qui sont devenues le minimum vital, on peut encore très bien vendre sans une seule vidéo sur ses pages. La question que je me pose, c’est : pour combien de temps encore ?
