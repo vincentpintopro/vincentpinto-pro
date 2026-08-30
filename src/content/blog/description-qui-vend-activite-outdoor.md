@@ -1,8 +1,8 @@
 ---
 title: "La description de votre activité, vous ne devriez pas l’écrire. Vous devriez la raconter."
 description: "La description est la partie que tout le monde bâcle, alors qu’elle vend au client et vous rend trouvable. L’astuce pour bien la faire : ne pas l’écrire, la raconter à voix haute."
-pubDate: 2026-08-13
-draft: true
+pubDate: 2026-08-30
+draft: false
 ---
 
 De tous les éléments d’une fiche activité, la description est celle que les opérateurs bâclent le plus. On soigne les photos, on affiche le prix, et pour le texte on recopie trois lignes vagues du type « venez découvrir le canyoning dans un cadre exceptionnel ». C’est dommage, parce que c’est justement la partie qui travaille pour vous même quand vous dormez.
