@@ -1,8 +1,8 @@
 ---
 title: "Le booking cut-off : le réglage que personne ne regarde et qui décide de vos ventes de dernière minute"
 description: "Le délai minimum avant lequel un client peut encore réserver en ligne est un curseur, pas une case à cocher. Bien réglé, il vous protège des annulations et capte le dernier moment."
-pubDate: 2026-08-13
-draft: true
+pubDate: 2026-09-04
+draft: false
 ---
 
 Il y a dans votre logiciel de réservation un petit réglage que la plupart des opérateurs n’ont jamais vraiment regardé. Il porte un nom un peu technique, le booking cut-off, et il décide de quelque chose de très concret : jusqu’à quel moment, avant le départ, un client peut encore réserver votre activité en ligne.
