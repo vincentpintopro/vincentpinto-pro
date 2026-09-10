@@ -1,8 +1,8 @@
 ---
 title: "Le point de rendez-vous introuvable, ou comment perdre un client déjà convaincu"
 description: "Un client prêt à réserver qui ne comprend pas où il doit se rendre finit par renoncer. Le point de rendez-vous flou est un frein invisible, et il se corrige en quelques minutes."
-pubDate: 2026-08-13
-draft: true
+pubDate: 2026-09-10
+draft: false
 ---
 
 Il y a un truc qui me rend dingue. Je tombe sur une école dans une région superbe, l’activité me fait envie, je suis prêt à réserver, et là, impossible de comprendre où ils sont vraiment. Pas d’adresse claire, ou une adresse noyée quelque part, aucun lien pour lancer un itinéraire, rien qui me dise noir sur blanc « c’est ici que ça se passe ». Alors je fais ce que fait tout le monde dans ce cas : je vais voir ailleurs.
