@@ -12,7 +12,8 @@ Pour chaque suggestion, donne :
 1. Article source → Article cible
 2. La phrase ou le paragraphe précis où le lien aurait sa place naturelle
 3. Un texte d'ancrage suggéré (court, naturel, pas du bourrage de mots-clés)
-4. Une phrase expliquant pourquoi ce rapprochement fait sens pour le lecteur (pas juste "les deux parlent de X")
+4. La phrase complète telle qu'elle apparaîtrait une fois le lien inséré, avec la syntaxe markdown du lien (ex : "...comme évoqué dans [le point de rendez-vous](/blog/ne-pas-cacher-point-rendez-vous/)..."), pour que l'utilisateur puisse juger si ça sonne naturel sans avoir à ouvrir le fichier
+5. Une phrase expliquant pourquoi ce rapprochement fait sens pour le lecteur (pas juste "les deux parlent de X")
 
 Classe tes suggestions par pertinence, les plus évidentes en premier. Si un article n'a aucun lien pertinent à proposer, ne force rien.
 
