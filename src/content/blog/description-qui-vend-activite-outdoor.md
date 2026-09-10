@@ -7,7 +7,7 @@ draft: false
 
 De tous les éléments d’une fiche activité, la description est celle que les opérateurs bâclent le plus. On soigne les photos, on affiche le prix, et pour le texte on recopie trois lignes vagues du type « venez découvrir le canyoning dans un cadre exceptionnel ». C’est dommage, parce que c’est justement la partie qui travaille pour vous même quand vous dormez.
 
-Une bonne description fait deux choses en même temps. Elle donne envie au client, en lui faisant vivre l’activité avant même qu’il ne réserve. Et elle vous rend trouvable, parce que c’est le texte de votre page que Google, et aujourd’hui les intelligences artificielles comme ChatGPT, lisent pour comprendre ce que vous proposez et décider de vous montrer ou non. La plupart des opérateurs n’en voient qu’une moitié, ou aucune. Une description soignée coche les deux cases d’un coup.
+Une bonne description [fait deux choses en même temps](/blog/ce-qui-vend-une-activite-outdoor-en-ligne/). Elle donne envie au client, en lui faisant vivre l’activité avant même qu’il ne réserve. Et elle vous rend trouvable, parce que c’est le texte de votre page que Google, et aujourd’hui les intelligences artificielles comme ChatGPT, lisent pour comprendre ce que vous proposez et décider de vous montrer ou non. La plupart des opérateurs n’en voient qu’une moitié, ou aucune. Une description soignée coche les deux cases d’un coup.
 
 Depuis 2015, je vois passer des milliers de fiches, et je peux vous dire que les meilleures descriptions n’ont presque jamais été « écrites » au sens classique. Elles ont été racontées.
 
@@ -17,7 +17,7 @@ Si la page blanche vous bloque, voici l’astuce la plus efficace que je connais
 
 Ça marche pour deux raisons. D’abord, ça débloque : vous savez parler de votre activité, vous le faites tous les jours au téléphone et à l’accueil, alors que devant un clavier vous séchez. Ensuite, ça donne un texte vivant, avec vos mots, votre façon de dire les choses, au lieu du blabla corporate impersonnel qu’on retrouve sur mille sites identiques. Le client sent la différence entre quelqu’un qui récite et quelqu’un qui raconte.
 
-Un point capital quand vous racontez : allez vraiment de A à Z. Les clients détestent les surprises. Décrivez le rendez-vous, l’heure, le lieu, la présentation, la découverte du matériel, la préparation, la marche d’approche ou la navette, l’activité elle-même, ce qu’on voit, ce qu’on ressent, les pauses, et la fin. Tout ce que vous laissez dans le flou est une question que le client se posera, et une raison pour lui d’hésiter ou de vous appeler au lieu de réserver directement.
+Un point capital quand vous racontez : allez vraiment de A à Z. Les clients détestent les surprises. [Décrivez le rendez-vous](/blog/ne-pas-cacher-point-rendez-vous/), l’heure, le lieu, la présentation, la découverte du matériel, la préparation, la marche d’approche ou la navette, l’activité elle-même, ce qu’on voit, ce qu’on ressent, les pauses, et la fin. Tout ce que vous laissez dans le flou est une question que le client se posera, et une raison pour lui d’hésiter ou de vous appeler au lieu de réserver directement.
 
 Si l’idée de retranscrire votre enregistrement à la main vous rebute, sachez que la saisie vocale de Google Docs fait le travail toute seule et gratuitement : vous ouvrez un document, vous activez la dictée vocale dans le menu Outils, et vous parlez. Le texte s’écrit au fur et à mesure. Vous n’avez plus qu’à le relire pour corriger les quelques ratés.
 

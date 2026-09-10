@@ -25,7 +25,7 @@ Quand je regarde les destinations qui ont décollé, les mêmes ingrédients rev
 
 D’abord, une expérience qu’on ne trouve pas partout ailleurs. Pas forcément unique au monde, mais suffisamment identifiable pour qu’on associe le lieu à cette activité précise. Bovec, c’est l’eau vive. Le Pays basque, c’est le surf. Cette association claire entre un lieu et une pratique, c’est le point de départ.
 
-Ensuite, quelqu’un qui la rend trouvable et réservable. C’est là que beaucoup de spots à fort potentiel calent. Un guide exceptionnel qui n’existe nulle part en ligne, dont on ne peut réserver la sortie qu’en l’appelant après avoir eu son numéro par un ami, ne fera jamais décoller une destination, même avec le meilleur canyon d’Europe. La visibilité en ligne et la réservation simple ne sont pas un accessoire, c’est ce qui permet à un lieu d’exister au-delà du bouche-à-oreille local.
+Ensuite, quelqu’un qui la rend trouvable et réservable. C’est là que beaucoup de spots à fort potentiel calent. Un guide exceptionnel qui n’existe nulle part en ligne, dont on ne peut réserver la sortie qu’en l’appelant après avoir eu son numéro par un ami, ne fera jamais décoller une destination, même avec le meilleur canyon d’Europe. La visibilité en ligne et [la réservation simple](/blog/goulot-etranglement-pros-outdoor-disponibilite/) ne sont pas un accessoire, c’est ce qui permet à un lieu d’exister au-delà du bouche-à-oreille local.
 
 Enfin, du temps et de la constance. Aucune de ces bascules ne s’est faite en une saison. Ce sont des années de travail, des premiers clients curieux, des retours, des gens qui en amènent d’autres. Ceux qui ont réussi sont ceux qui ont cru à leur coin avant tout le monde et qui ont tenu pendant que les autres attendaient un signe.
 
