@@ -2,6 +2,12 @@
 import Container from "@components/Container.astro";
 import Link from "@components/Link.astro";
 import { SITE } from "@consts";
+
+// "blog" reste actif sur toute la section (liste + articles individuels).
+const { pathname } = Astro.url;
+const isBlogActive = pathname === "/blog/" || pathname.startsWith("/blog/");
+const isQuiSuisJeActive = pathname === "/qui-suis-je/";
+const isTravaillerActive = pathname === "/travailler-avec-moi/";
 ---
 
 <header transition:persist>
@@ -13,15 +19,21 @@ import { SITE } from "@consts";
         </div>
       </Link>
       <nav class="flex items-center gap-1 text-sm">
-        <Link href="/blog/">blog</Link>
+        <Link href="/blog/" data-nav="/blog/" active={isBlogActive}>blog</Link>
         <span>
           {`/`}
         </span>
-        <Link href="/qui-suis-je/">qui suis-je</Link>
+        <Link href="/qui-suis-je/" data-nav="/qui-suis-je/" active={isQuiSuisJeActive}
+          >qui suis-je</Link
+        >
         <span>
           {`/`}
         </span>
-        <Link href="/travailler-avec-moi/">travailler avec moi</Link>
+        <Link
+          href="/travailler-avec-moi/"
+          data-nav="/travailler-avec-moi/"
+          active={isTravaillerActive}>travailler avec moi</Link
+        >
         <span>
           {`/`}
         </span>
