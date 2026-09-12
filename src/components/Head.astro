@@ -76,6 +76,7 @@ const { title, description, image = "/og-image.jpg" } = Astro.props;
     onScroll();
     animate();
     addCopyCodeButtons();
+    updateActiveNav();
 
     const backToTop = document.getElementById("back-to-top");
     backToTop?.addEventListener("click", (event) => scrollToTop(event));
@@ -84,6 +85,25 @@ const { title, description, image = "/og-image.jpg" } = Astro.props;
     backToPrev?.addEventListener("click", () => window.history.back());
 
     document.addEventListener("scroll", onScroll);
+  }
+
+  // Le <header> a transition:persist : il n'est pas régénéré lors d'une
+  // navigation cliquée, donc l'état actif calculé côté serveur doit être
+  // revalidé ici après chaque swap de page.
+  function updateActiveNav() {
+    const path = window.location.pathname;
+
+    document.querySelectorAll("header nav [data-nav]").forEach((link) => {
+      const href = link.getAttribute("data-nav");
+      const isActive = href === "/blog/" ? path.startsWith("/blog/") : path === href;
+
+      link.classList.toggle("font-semibold", isActive);
+      if (isActive) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
   }
 
   function animate() {
