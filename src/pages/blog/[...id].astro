@@ -50,7 +50,15 @@ const post = Astro.props;
 const { Content, headings } = await render(post);
 ---
 
-<Layout title={post.data.title} description={post.data.description}>
+<Layout
+  title={post.data.title}
+  description={post.data.description}
+  article={{
+    headline: post.data.title,
+    datePublished: post.data.pubDate,
+    dateModified: post.data.updatedDate ?? post.data.pubDate,
+  }}
+>
   <Container>
     <div class="animate">
       <BackToPrevious href="/blog/">Retour au blog</BackToPrevious>
