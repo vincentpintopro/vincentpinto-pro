@@ -25,7 +25,9 @@ const blog = (await getCollection("blog"))
           </article>
 
           <img
-            src="/header-accueil.jpg"
+            src="/header-accueil-2000.jpg"
+            srcset="/header-accueil-800.jpg 800w, /header-accueil-1400.jpg 1400w, /header-accueil-2000.jpg 2000w"
+            sizes="(min-width: 640px) 616px, 100vw"
             alt="Vincent Pinto en randonnée dans le Caucase géorgien"
             width="2400"
             height="1000"
