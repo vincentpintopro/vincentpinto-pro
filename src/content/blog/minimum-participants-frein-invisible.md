@@ -1,8 +1,8 @@
 ---
 title: "Le minimum de participants, ce frein invisible qui fait fuir vos clients à deux"
 description: "Un minimum de participants est un vrai enjeu de marge pour vous. Mais pour le client, il doit rester invisible ou paraître positif, jamais une mauvaise surprise qui le fait renoncer."
-pubDate: 2026-08-13
-draft: true
+pubDate: 2026-09-14
+draft: false
 ---
 
 Un client tombe sur votre activité, elle lui plaît, il est prêt à réserver. Ils sont deux. Et là, il découvre qu’il faut un minimum de quatre personnes pour que la sortie parte. Ou pire : il ne le découvre nulle part, il réserve, et on le rappelle deux jours plus tard pour lui dire que non, finalement, ça ne partira pas.
