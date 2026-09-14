@@ -25,11 +25,46 @@ interface Props {
   title: string;
   description: string;
   image?: string;
+  article?: {
+    headline: string;
+    datePublished: Date;
+    dateModified: Date;
+  };
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/og-image.jpg" } = Astro.props;
+const { title, description, image = "/og-image.jpg", article } = Astro.props;
+
+const jsonLd = article
+  ? {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: article.headline,
+      description: description,
+      datePublished: article.datePublished.toISOString(),
+      dateModified: article.dateModified.toISOString(),
+      author: {
+        "@type": "Person",
+        name: "Vincent Pinto",
+        url: "https://www.linkedin.com/in/vincent-pinto-marketplaces/",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Vincent Pinto",
+        logo: {
+          "@type": "ImageObject",
+          url: new URL("/favicon-512.png", Astro.site).toString(),
+        },
+      },
+      url: canonicalURL.toString(),
+      inLanguage: "fr",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": canonicalURL.toString(),
+      },
+    }
+  : null;
 ---
 
 <!-- Global Metadata -->
@@ -42,6 +77,11 @@ const { title, description, image = "/og-image.jpg" } = Astro.props;
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
+
+<!-- JSON-LD structured data -->
+{jsonLd && (
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g, "\\u003c")} />
+)}
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
