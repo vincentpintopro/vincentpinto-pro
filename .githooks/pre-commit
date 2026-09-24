@@ -1,0 +1,7 @@
+#!/bin/sh
+# Hook pre-commit : délègue au script Node versionné à côté.
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-commit : node est introuvable, vérification des articles ignorée." >&2
+  exit 0
+fi
+exec node "$(dirname "$0")/check-articles.mjs"

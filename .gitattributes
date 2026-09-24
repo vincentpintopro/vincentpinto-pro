@@ -1,0 +1,2 @@
+# Les hooks sont des scripts shell : ils doivent rester en LF, même avec core.autocrlf=true sous Windows.
+.githooks/* text eol=lf
