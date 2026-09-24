@@ -140,6 +140,11 @@ import Search from "astro-pagefind/components/Search";
     font-weight: 600;
   }
 
+  /* Les synonymes (métadonnée Pagefind) ne doivent pas s'afficher en étiquettes. */
+  #search .pagefind-ui__result-tags {
+    display: none;
+  }
+
   #search .pagefind-ui__message {
     padding: 0;
     padding-bottom: 0.75rem;

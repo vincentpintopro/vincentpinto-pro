@@ -4,6 +4,7 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Pagefind from "@components/PageFind.astro";
 import { SITE } from "@consts";
+import { synonymesPour, texteIndexable } from "@lib/synonymes";
 
 type Props = {
   title: string;
@@ -16,6 +17,9 @@ type Props = {
 };
 
 const { title, description, article } = Astro.props;
+
+const html = await Astro.slots.render("default");
+const synonymes = synonymesPour(texteIndexable(html));
 ---
 
 <!doctype html>
@@ -25,6 +29,7 @@ const { title, description, article } = Astro.props;
       title={`${title} | ${SITE.TITLE}`}
       description={description}
       article={article}
+      synonymes={synonymes}
     />
   </head>
   <body>
@@ -37,8 +42,8 @@ const { title, description, article } = Astro.props;
       </style>
     </noscript>
     <Header />
-    <main>
-      <slot />
+    <main data-pagefind-body>
+      <Fragment set:html={html} />
     </main>
     <Footer />
     <Pagefind />
