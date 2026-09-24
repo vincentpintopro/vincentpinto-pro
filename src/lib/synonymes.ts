@@ -12,18 +12,17 @@ function normaliser(s: string): string {
   return ` ${mots} `;
 }
 
-// Retire les éléments marqués data-pagefind-ignore : on ne cherche des
-// synonymes que dans ce que Pagefind indexe réellement.
-function retirerBlocsIgnores(html: string): string {
+// Retire les éléments portant l'attribut donné.
+function retirerBlocs(html: string, attribut: string): string {
   let out = html;
   for (;;) {
-    const i = out.indexOf("data-pagefind-ignore");
+    const i = out.indexOf(attribut);
     if (i === -1) return out;
     const debut = out.lastIndexOf("<", i);
     const ouvrante = new RegExp(`<([a-zA-Z][\\w-]*)${ATTRS}>`, "y");
     ouvrante.lastIndex = debut;
     const m = ouvrante.exec(out);
-    if (!m) return out.replace("data-pagefind-ignore", "");
+    if (!m) return out.replace(attribut, "");
     const nom = m[1];
     const balise = new RegExp(`<(/?)${nom}\\b${ATTRS}>`, "gi");
     balise.lastIndex = ouvrante.lastIndex;
@@ -53,8 +52,12 @@ const ENTITES: Record<string, string> = {
   "&nbsp;": " ",
 };
 
+// Texte dans lequel chercher des synonymes : ce que Pagefind indexe (sans les
+// data-pagefind-ignore), moins les blocs data-sans-synonymes, qui restent
+// cherchables mais ne déclenchent aucun groupe.
 export function texteIndexable(html: string): string {
-  return retirerBlocsIgnores(html.replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, " "))
+  const sansScripts = html.replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, " ");
+  return retirerBlocs(retirerBlocs(sansScripts, "data-pagefind-ignore"), "data-sans-synonymes")
     .replace(new RegExp(`</?[a-zA-Z][^\\s>/]*${ATTRS}>`, "g"), " ")
     .replace(/&(?:amp|lt|gt|quot|nbsp|#39|#x27);/g, (e) => ENTITES[e]);
 }
