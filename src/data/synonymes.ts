@@ -9,5 +9,5 @@ export const GROUPES_SYNONYMES: string[][] = [
   ["fiche", "page produit", "fiche activité", "fiche google", "profil"],
   ["photos", "images", "visuels", "vidéos"],
   ["ia", "intelligence artificielle", "chatgpt", "gemini"],
-  ["faq", "foire aux questions", "questions fréquentes", "questions"],
+  ["faq", "foire aux questions", "questions fréquentes"],
 ];
