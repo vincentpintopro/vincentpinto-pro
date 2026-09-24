@@ -62,14 +62,21 @@ export function texteIndexable(html: string): string {
     .replace(/&(?:amp|lt|gt|quot|nbsp|#39|#x27);/g, (e) => ENTITES[e]);
 }
 
+// Détection par mot entier, avec un « s » ou « x » de pluriel toléré à la fin
+// de chaque mot du terme (« pages produits » correspond à « page produit »).
+function motifTerme(terme: string): RegExp | null {
+  const mots = normaliser(terme).split(" ").filter(Boolean);
+  if (mots.length === 0) return null;
+  return new RegExp(` ${mots.map((m) => `${m.replace(/s$/, "")}[sx]?`).join(" ")} `);
+}
+
 // Pour chaque groupe dont au moins un terme figure dans le texte, renvoie
 // les autres termes du groupe (ceux qui n'y figurent pas déjà).
 export function synonymesPour(texte: string): string[] {
   const t = normaliser(texte);
   const present = (terme: string) => {
-    const n = normaliser(terme).trim();
-    const variante = n.endsWith("s") ? n.slice(0, -1) : `${n}s`;
-    return t.includes(` ${n} `) || t.includes(` ${variante} `);
+    const motif = motifTerme(terme);
+    return motif !== null && motif.test(t);
   };
   const ajouts = new Set<string>();
   for (const groupe of GROUPES_SYNONYMES) {
