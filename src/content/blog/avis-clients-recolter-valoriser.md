@@ -1,8 +1,8 @@
 ---
 title: "Faites de vos avis clients votre meilleur vendeur"
 description: "Un avis bien récolté rassure le prochain acheteur au moment exact où il hésite. Voici comment les collecter à chaud, les afficher au bon endroit, et répondre à tous."
-pubDate: 2026-09-22
-draft: true
+pubDate: 2026-09-24
+draft: false
 ---
 
 Un bon avis client, c’est un vendeur qui travaille pour vous vingt-quatre heures sur vingt-quatre, sans salaire et sans jour de repos. Il rassure le prochain client à l’instant précis où il hésite, il répond à la question que vous n’êtes pas là pour entendre, il finit de convaincre quelqu’un que vous n’aurez jamais au téléphone. Et pourtant, la plupart des opérateurs laissent ce vendeur dormir.
