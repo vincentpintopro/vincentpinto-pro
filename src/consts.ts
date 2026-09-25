@@ -10,7 +10,7 @@ export const SITE: Site = {
 export const HOME: Metadata = {
   TITLE: "Conseils pour les pros de l’outdoor",
   DESCRIPTION:
-    "Conseils concrets pour les structures d’activités outdoor : vendre mieux, être visible sur Google, choisir ses outils, élargir sa saison. Par Vincent Pinto, 10 ans de terrain.",
+    "Des conseils concrets pour les pros de l’outdoor et de l’aventure, tirés de ce que j’ai vu marcher, et échouer, sur le terrain à travers le monde depuis 2015.",
 };
 
 export const BLOG: Metadata = {
