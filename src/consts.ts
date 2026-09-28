@@ -10,7 +10,7 @@ export const SITE: Site = {
 export const HOME: Metadata = {
   TITLE: "Conseils pour les pros de l’outdoor",
   DESCRIPTION:
-    "Des conseils concrets pour les pros de l’outdoor et de l’aventure, tirés de ce que j’ai vu marcher, et échouer, sur le terrain à travers le monde depuis 2015.",
+    "Des conseils concrets pour les pros de l’outdoor et de l’aventure, tirés de ce que j’ai vu marcher, et échouer, sur le terrain depuis 2015.",
 };
 
 export const BLOG: Metadata = {
