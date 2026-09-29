@@ -30,6 +30,18 @@ const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
     <aside data-pagefind-ignore>
       <div class="space-y-10">
         <div class="space-y-4">
+          <h1 class="animate text-3xl font-semibold text-black dark:text-white">
+            Le blog pour les pros de l’outdoor
+          </h1>
+          <article class="animate">
+            <p>
+              Ce que personne ne prend le temps de vous expliquer sur la
+              vente d’activités outdoor en ligne. Du concret, testé sur le
+              terrain, zéro théorie.
+            </p>
+          </article>
+        </div>
+        <div class="space-y-4">
           {
             years.map((year) => (
               <section class="animate space-y-4">

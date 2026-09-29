@@ -62,6 +62,17 @@
   header nav a {
     @apply whitespace-nowrap;
   }
+}
+
+/* Cibles tactiles >= 44px sur mobile uniquement (marge intérieure, apparence
+   inchangée). L'apparence desktop reste celle d'avant ces corrections. */
+@media (max-width: 39.9975rem) {
+  header nav a {
+    padding-block: 0.75rem;
+  }
+}
+
+@layer utilities {
 
   main {
     @apply flex-1 py-32;
