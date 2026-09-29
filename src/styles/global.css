@@ -54,8 +54,13 @@
 
   header {
     @apply fixed left-0 right-0 top-0 z-50 py-6;
-    @apply bg-neutral-100/75 dark:bg-neutral-900/75;
-    @apply saturate-200 backdrop-blur-xs;
+    @apply bg-neutral-100/90 dark:bg-neutral-900/90;
+    @apply border-b border-black/5 dark:border-white/5;
+    @apply saturate-200 backdrop-blur-md;
+  }
+
+  header nav a {
+    @apply whitespace-nowrap;
   }
 
   main {
