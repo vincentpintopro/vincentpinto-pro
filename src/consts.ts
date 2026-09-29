@@ -14,8 +14,9 @@ export const HOME: Metadata = {
 };
 
 export const BLOG: Metadata = {
-  TITLE: "Blog",
-  DESCRIPTION: "Tous les articles du blog.",
+  TITLE: "Le blog pour les pros de l’outdoor",
+  DESCRIPTION:
+    "Ce que personne ne prend le temps de vous expliquer sur la vente d’activités outdoor en ligne. Du concret, testé sur le terrain, zéro théorie.",
 };
 
 export const SOCIALS: Socials = [];

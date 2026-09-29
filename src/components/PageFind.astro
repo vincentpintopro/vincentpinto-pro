@@ -113,7 +113,7 @@ import Search from "astro-pagefind/components/Search";
     --pagefind-ui-scale: 0.75;
     --pagefind-ui-border-width: 1px;
     --pagefind-ui-border-radius: 3px;
-    --pagefind-ui-font: "Geist", sans-serif;
+    --pagefind-ui-font: var(--font-sans);
     --pagefind-ui-primary: #3d3d3d;
     --pagefind-ui-text: #3d3d3d;
     --pagefind-ui-background: #ffffff;
@@ -148,5 +148,16 @@ import Search from "astro-pagefind/components/Search";
   #search .pagefind-ui__message {
     padding: 0;
     padding-bottom: 0.75rem;
+  }
+
+  /* Le surlignage par défaut du composant est jaune vif ; on le remplace par
+     une teinte discrète cohérente avec le gris du site. */
+  #search mark {
+    background-color: rgb(0 0 0 / 0.12);
+    color: inherit;
+  }
+
+  .dark #search mark {
+    background-color: rgb(255 255 255 / 0.22);
   }
 </style>
