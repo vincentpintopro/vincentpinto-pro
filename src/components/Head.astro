@@ -153,7 +153,6 @@ const jsonLd = article
       const href = link.getAttribute("data-nav");
       const isActive = href === "/blog/" ? path.startsWith("/blog/") : path === href;
 
-      link.classList.toggle("font-semibold", isActive);
       if (isActive) {
         link.setAttribute("aria-current", "page");
       } else {

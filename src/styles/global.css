@@ -63,11 +63,17 @@
     @apply whitespace-nowrap;
   }
 
-  /* Le gras seul est trop discret, vu que tous les liens sont soulignés :
-     la page active gagne un soulignement plein et un peu plus épais. */
+  /* Page active : soulignement plein et un peu plus épais, texte plus foncé.
+     Jamais de font-weight ici : une graisse différente élargit le texte et
+     décale toute la nav (et fait passer le header sur 2 lignes). */
   header nav a[aria-current="page"] {
+    color: rgb(0 0 0);
     text-decoration-color: currentColor;
     text-decoration-thickness: 1.5px;
+  }
+
+  .dark header nav a[aria-current="page"] {
+    color: rgb(255 255 255);
   }
 }
 
