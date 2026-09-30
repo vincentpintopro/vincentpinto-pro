@@ -12,7 +12,9 @@ const isTravaillerActive = pathname === "/travailler-avec-moi/";
 
 <header transition:persist>
   <Container>
-    <div class="flex flex-wrap justify-between gap-y-2">
+    <div
+      class="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:justify-between sm:gap-y-2"
+    >
       <Link href="/" underline={false}>
         <div class="font-semibold">
           {SITE.TITLE}
@@ -34,9 +36,6 @@ const isTravaillerActive = pathname === "/travailler-avec-moi/";
           data-nav="/travailler-avec-moi/"
           active={isTravaillerActive}>travailler avec moi</Link
         >
-        <span>
-          {`/`}
-        </span>
         <button
           id="magnifying-glass"
           aria-label="Rechercher"

@@ -62,6 +62,19 @@
   header nav a {
     @apply whitespace-nowrap;
   }
+
+  /* Page active : soulignement plein et un peu plus épais, texte plus foncé.
+     Jamais de font-weight ici : une graisse différente élargit le texte et
+     décale toute la nav (et fait passer le header sur 2 lignes). */
+  header nav a[aria-current="page"] {
+    color: rgb(0 0 0);
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1.5px;
+  }
+
+  .dark header nav a[aria-current="page"] {
+    color: rgb(255 255 255);
+  }
 }
 
 /* Cibles tactiles >= 44px sur mobile uniquement (marge intérieure, apparence
