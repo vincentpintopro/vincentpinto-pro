@@ -1,8 +1,8 @@
 ---
 title: "Votre produit d’initiation est votre meilleure arme"
 description: "L’initiation, ce petit produit pas cher qu’on néglige, est souvent le plus stratégique de votre catalogue. Encore faut-il savoir quel rôle il joue vraiment pour votre activité."
-pubDate: 2026-09-22
-draft: true
+pubDate: 2026-10-01
+draft: false
 ---
 
 L’initiation est probablement le produit le plus stratégique de votre catalogue, et c’est souvent celui que vous soignez le moins.
